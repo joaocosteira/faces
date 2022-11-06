@@ -7,7 +7,11 @@
 - Cool GSAP Thing
 
 ## Inspo links
-
+- First Intro to GSAP:
+ * https://www.youtube.com/watch?v=m6PDUIF24v4
+ * https://www.youtube.com/watch?v=YqOhQWbouCE
+ * https://www.youtube.com/watch?v=X7IBa7vZjmo
+ 
 - Menus:
     * https://www.youtube.com/watch?v=JlcKZCGrATA&list=LL&index=78
     * https://www.youtube.com/watch?v=5mf5K8d3MUk
