@@ -11,6 +11,10 @@
  * https://www.youtube.com/watch?v=m6PDUIF24v4
  * https://www.youtube.com/watch?v=YqOhQWbouCE
  * https://www.youtube.com/watch?v=X7IBa7vZjmo
+
+ * A ton of scrolltrigger examples:
+    - https://greensock.com/st-demos/
+
  
 - Menus:
     * https://www.youtube.com/watch?v=JlcKZCGrATA&list=LL&index=78
