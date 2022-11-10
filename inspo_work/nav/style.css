@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.link{
+    margin-top: 1rem;
+    position: relative;
+}
+
+
+.link1:hover::after{
+    content: " Hi Hi hi Hi Hi hi";
+    display: block;
+    position: absolute;
+    margin-top: -1rem;
+}
+
+.link1:hover::before{
+    content: " Hi Hi hi Hi Hi hi";
+    position: absolute;
+    margin-top: -.5rem;
+}
+
+
+
+.link2:hover::after{
+    content: " Ola Ola ola Ola Ola ola";
+    display: block;
+    position: absolute;
+    margin-top: -1rem;
+}
+
+.link2:hover::before{
+    content: " Ola Ola ola Ola Ola ola";
+    position: absolute;
+    margin-top: -.5rem;
+}
+
+
+.link3:hover::after{
+    content: " Adious Adious adious Adious Adious adious";
+    display: block;
+    position: absolute;
+    margin-top: -1rem;
+}
+
+.link3:hover::before{
+    content: " Adious Adious adious Adious Adious adious";
+    position: absolute;
+    margin-top: -.5rem;
+}

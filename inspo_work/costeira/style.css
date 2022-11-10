@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.c, .o, .s, .t, .e, .i, .r, .a{
+    position: absolute;
+    height: 120vh;
+    display: none;
+}
+
+.joao,
+.costeira{
+    display: block;
+    margin: 3rem;
+    height: 100px;
+}
