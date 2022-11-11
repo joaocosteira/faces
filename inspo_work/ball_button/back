@@ -1,0 +1,37 @@
+// let t1 = gsap.timeline({ paused: true });
+// t1.to(".menu", { duration: "600ms", width: "400vw", height: "400vh", ease: Power2.ease })
+// t1.to(".menu", {  borderRadius: 0})
+// t1.to(".menu", { duration: 0, top: 0, left: 0, x: "50%", y:"50%", width: "100vw", height: "100vh",delay: 1});
+
+
+//t1.to(".menu",{duration: "1s", backgroundColor : "red", top: 0, left:0, width: "100vw", height: "100vh", borderRadius: "0"})
+// t1.to(
+//     ".nav",
+//     {
+//         opacity: 1,
+//         marginBottom: 0,
+//         duration: 1,
+//         ease: Power2.easeInOut,
+//         stagger: 0.3,
+//     },
+//     ">-0.5"
+// );
+
+
+let t1 = gsap.timeline({ paused: true });
+t1.to(".menu",{ duration: 1, backgroundColor: "red"})
+t1.to(".menu",{ duration: 1, backgroundColor: "blue"})
+
+const toggleMenu = () => {
+    const menu = document.querySelector('.menu');
+    menu.dataset.status = menu.dataset.status === "closed" ? "opened" : "closed"
+
+
+    if(menu.dataset.status === "opened"){
+        t1.play().timeScale(1);
+    }else{
+        t1.timeScale(2.5);
+        t1.reverse();
+    }
+
+}
