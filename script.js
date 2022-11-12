@@ -1,5 +1,6 @@
 const menu = document.querySelector('.ball');
 const audio = document.querySelector('.audio');
+const player = document.querySelector('audio'); 
 
 let tl = gsap.timeline({paused : true});
 tl.fromTo(".ball",{
@@ -51,7 +52,7 @@ tl.fromTo(".x",{
         opacity: 1,
         duration: 1,
         stagger: 0.1,
-    })    
+    },"=<.1")    
 
 const toggleMenu = () => {
 
@@ -68,7 +69,10 @@ const toggleMenu = () => {
 
 const handleAudio = () => {
     audio.dataset.music = audio.dataset.music === "paused" ? "playing" : "paused";
+    audio.dataset.music === "playing" ? player.play() : player.pause()
 }
+
+player.onended = () => { audio.dataset.music = "paused" }
 
 
 //ver como mudar o source da img
@@ -80,3 +84,6 @@ setInterval(() => {
     currentFace = (currentFace + 1) % faces.length;
     faces[currentFace].dataset.imgstatus="active";
 }, 100)
+
+
+//audio player:
