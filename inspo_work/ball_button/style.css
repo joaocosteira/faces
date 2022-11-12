@@ -11,9 +11,9 @@ body{
     font-family: "Source Serif VF", "Source Serif", sans;
     font-size: 18px;
     font-weight: 300;
-    overflow-x: hidden;
     font-feature-settings: "kern" 1, "liga" 1;
     font-optical-sizing: auto;
+    overflow-x: hidden;
     margin: 0;
 }
   

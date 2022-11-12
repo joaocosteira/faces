@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FACES</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="fonts/source-serif-caption.css">
     <link rel="stylesheet" href="fonts/source-serif-smtext.css">
     <link rel="stylesheet" href="fonts/source-serif-text.css">
@@ -16,20 +14,48 @@
     <link rel="icon" type="image/png" href="/imgs/dog.png" sizes="any">
     <link rel="icon" href="/imgs/dog.svg" type="image/svg+xml">
     <script defer src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>FACES</title>
 </head>
 <body>
-    <div class="container">
-        <img id="face" src="/svgs/6.svg" alt="First Face">
+    <div class="content">
+        <div class="audio" data-music="paused" onClick="handleAudio()"></div>
+        <img src="./svgs/1.svg" alt="" class="face" data-imgstatus="active" data-imgid="1">
+        <img src="./svgs/2.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="2">
+        <img src="./svgs/3.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="3">
+        <img src="./svgs/4.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="4">
+        <img src="./svgs/5.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="5">
+        <img src="./svgs/6.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="6">
+        <img src="./svgs/7.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="7">
+        <img src="./svgs/8.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="8">
+        <img src="./svgs/9.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="9">
+        <img src="./svgs/10.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="10">
+        <img src="./svgs/11.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="11">
+        <img src="./svgs/12.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="12">
+        <img src="./svgs/13.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="13">
+        <img src="./svgs/14.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="14">
+        <img src="./svgs/15.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="15">
+        <img src="./svgs/16.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="16">
+        <img src="./svgs/17.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="17">
+        <img src="./svgs/18.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="18">
+        <img src="./svgs/19.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="19">
+        <img src="./svgs/20.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="20">
+        <img src="./svgs/21.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="21">
+        <img src="./svgs/22.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="22">
+        <img src="./svgs/23.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="23">
+        <img src="./svgs/24.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="24">
+        <img src="./svgs/25.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="25">
+        <img src="./svgs/26.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="26">
+        <img src="./svgs/27.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="27">
+        <img src="./svgs/28.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="28">
+        <img src="./svgs/29.svg" alt="" class="face" data-imgstatus="inactive" data-imgid="29">
     </div>
-
-    <div class="menu" data-status="closed" onclick="handleClick()">
+    <div class="ball" data-status="closed" onclick="toggleMenu()">
         <div class="menu-content">
-            <h1>Faces</h1>
-            <p>Faces is an art project which combines three main medeums: drawing, digital and music.</p>
-            <p>All of this content and material were developed by João Costeira.</p>
-            <img src="./x.svg" alt="close btn">
+            <img class="x" src="./imgs/x.svg" alt="close">
+            <h1 class="menu-item">Faces</h1>
+            <p class="menu-item">Faces is a multi medium art project. All the images, music and website were developed by João Costeira.</p>
         </div>
     </div>
-
 </body>
 </html>
