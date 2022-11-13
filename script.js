@@ -5,7 +5,7 @@ const player = document.querySelector('audio');
 let tl = gsap.timeline({paused : true});
 tl.fromTo(".ball",{
     position: "fixed",
-    top: "90vh",
+    top: "85vh",
     left: "80vw",
     zIndex: 3
 },{ duration : 1, width: "400vw", height: "400vw"});
