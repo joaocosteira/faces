@@ -3,10 +3,16 @@ const audio = document.querySelector('.audio');
 const player = document.querySelector('audio'); 
 
 let tl = gsap.timeline({paused : true});
+tl.fromTo(".eye",{
+    display: "block"
+},{
+    display: "none", 
+    duration: 0.1
+})
 tl.fromTo(".ball",{
     position: "fixed",
-    top: "85vh",
-    left: "80vw",
+    top: "90vh",
+    left: "70vw",
     zIndex: 3
 },{ duration : 1, width: "400vw", height: "400vw"});
 tl.to(".ball",{

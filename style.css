@@ -71,7 +71,7 @@ h1{
 .ball{
     position: fixed;
     top: 90vh;
-    left: 80vw;
+    left: 70vw;
     height: 3rem;
     width: 3rem;
     background-color: black;
@@ -79,6 +79,21 @@ h1{
     border-radius: 50%;
     z-index: 3;
 }
+
+.ball[data-status="closed"] .eye{
+    display: block;
+}
+
+.eye{
+    display: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+
 
 
 .ball[data-status="closed"]:hover{
